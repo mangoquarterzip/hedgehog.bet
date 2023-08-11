@@ -1,0 +1,44 @@
+body {
+    font-family: 'Public Sans', sans-serif; /* Set the font family to Public Sans */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.content {
+    flex: 0 0 30%; /* Take up 30% of the remaining width */
+    padding: 1rem;
+    background-color: #E2E25E;
+    display: flex;
+    flex-direction: column; /* Stack divs vertically */
+    justify-content: flex-start; /* Align divs to the top */
+    align-items: stretch; /* Stretch divs to full width */
+}
+
+.content2 {
+    flex: 0 0 70%; /* Take up 70% of the remaining width */
+    padding: 1rem;
+    background-color: #151619;
+}
+.div1,
+.div2,
+.div4 {
+    flex: 0 0 10%; /* Divs 1, 2, and 4 take 10% of the .content height */
+}
+
+.div3 {
+    background-color: green;
+    flex: 0 0 70%; /* Div3 takes 70% of the .content height */
+}
+
+.div1 {
+    background-color: red;
+}
+
+.div2 {
+    background-color: purple;
+}
+
+.div4 {
+    background-color: blue;
+}
