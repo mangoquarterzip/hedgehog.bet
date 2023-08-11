@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+
 }
 
 .content {
@@ -41,13 +42,14 @@ body {
     font-size: 24px;
     display: flex; /* Enable flexbox layout */
     align-items: center; /* Vertically center the content */
+    white-space: nowrap; /* Prevent line breaks */
 }
 .div2 {
     align-items: center; /* Vertically center the content */
 }
 
 .div4 {
-    background-color: blue;
+    background-color: #E2E25E;
 }
 
 .bold-bigger {
@@ -57,6 +59,8 @@ body {
 .flex-center {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
 }
 
 .box {
@@ -66,5 +70,60 @@ body {
     padding: 1rem;
     border-radius: 10px;
     box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.custom-button {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-button svg {
+    width: 24px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .full-width-button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+.top-section, .bottom-section {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between; /* Distribute boxes evenly across the container */
+    background-color: #151619;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between; /* Distribute boxes evenly across the container */
+    background-color: #151619;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.betbox {
+    background-color: #1a1c20;
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1; /* Equal flex distribution for all boxes */
+    margin-right: 1rem; /* Add spacing between boxes */
+}
