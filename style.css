@@ -27,18 +27,44 @@ body {
 }
 
 .div3 {
-    background-color: green;
-    flex: 0 0 70%; /* Div3 takes 70% of the .content height */
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next row */
+    justify-content: space-between; /* Distribute boxes evenly across the row */
+    background-color: #E2E25E;
+    flex: 0 0 70%;
+    padding: 1rem;
+    border-radius: 10px; /* Add rounded edges */
 }
 
 .div1 {
-    background-color: red;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Vertically center the content */
 }
-
 .div2 {
-    background-color: purple;
+    align-items: center; /* Vertically center the content */
 }
 
 .div4 {
     background-color: blue;
 }
+
+.bold-bigger {
+    font-weight: bold;
+    font-size: 35px;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    flex-basis: calc(50% - 1rem); /* Each box takes up half of the available width minus padding */
+    margin-bottom: 1rem;
+    background-color: #eceb8d;
+    padding: 1rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
