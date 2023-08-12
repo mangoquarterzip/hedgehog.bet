@@ -60,3 +60,7 @@ only solution is to change contract and write new function called accept(), both
 write whitepaper
 
 need to edit the contract so that we pass the threshold into the constructor too
+
+have buttons for mode, zora, optimism and base, goerli, mumbai
+
+but cross chain funcitonality with hyperlane only works between goerli and mumabi at the moment

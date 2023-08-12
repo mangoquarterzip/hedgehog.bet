@@ -257,11 +257,12 @@
         <div class="betbox" style="flex: 30%; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;">
             <h1 id="contract-address">Contract Address: asdukhfaskdfasjdf</h1><br>
             <h1 id="date-opened">Date Opened: xx/xx/xx</h1><br>
-            <h1 id="total-nfts">Total Amount of NFTs: 5</h1><br>
+            <h1 id="total-nfts">Total Amount of NFTs: loading</h1><br>
             <h1 id="total-erc20s">Total Amount of ERC20s: 3</h1><br>
             <h1 id="nft-worth">NFT Worth: $23,245.52</h1><br>
             <h1 id="erc20-worth">ERC20 Worth: $12,933.92</h1><br>
             <h1 id="total-asset-worth">Total Asset Worth: $59,231.62</h1> <br>
+            <h1 id="chain">Chain: Base</h1> <br>
         </div>
     </div>
 
@@ -273,8 +274,8 @@
             <label for="helper-text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
             <input type="text" id="helper-text" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter pre-existing contract address...">
             <br>
-            <button type="button" class="full-width-button-new text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Load Contract</button>
-
+            <!-- Your button -->
+            <button id="loadContractButton" type="button" class="full-width-button-new text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Load Contract</button>
 
         </div>
     </div>
@@ -299,5 +300,6 @@
   <script src="https://cdn.jsdelivr.net/npm/daisyui@1.10.0/dist/full.js"></script>
   <script src="script.js"></script>
   <script src="./node_files/getNfts.js"></script>
+  <script src="./covalent/getBoardData.js"></script>
 </body>
 </html>
