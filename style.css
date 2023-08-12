@@ -77,6 +77,10 @@ body {
     width: 200px;
     /* Hide overflowing content */
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
