@@ -276,7 +276,7 @@ async function depositNFT() {
     const contract = new ethers.Contract(contractAddress, contractABI, provider.getSigner());
 
     try {
-        const result = await contract.depositNFT("0x932Ca55B9Ef0b3094E8Fa82435b3b4c50d713043","25452");
+        const result = await contract.depositNFT("0x5270bfC224357Cbf7EB76C8fbBb5D49fD4b86934","1");
         //change the function anme here
         console.log(result);
     } catch (error) {

@@ -276,7 +276,7 @@ async function depositERC20() {
     const contract = new ethers.Contract(contractAddress, contractABI, provider.getSigner());
 
     try {
-        const result = await contract.depositERC20("0x326C977E6efc84E512bB9C30f76E30c160eD06FB", "1000000" );
+        const result = await contract.depositERC20("0x576cfd493aB3dB2ED06b107be2f1ec172f45f3BE", "1000000" );
         //change the function anme here
         console.log(result);
     } catch (error) {
