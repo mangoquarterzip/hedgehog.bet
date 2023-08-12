@@ -58,3 +58,5 @@ fix the issue where anyone can lock anything and then that other person is force
 
 only solution is to change contract and write new function called accept(), both people have to call accept() before you can lock() ? need to think about it
 write whitepaper
+
+need to edit the contract so that we pass the threshold into the constructor too

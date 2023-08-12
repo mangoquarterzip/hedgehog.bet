@@ -140,6 +140,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* Set a fixed height for the boxes */
+    height: 500px; /* Adjust this value as needed */
+    /* Hide overflowing content */
+    overflow: hidden;
 }
 
 .full-width-button-new {
