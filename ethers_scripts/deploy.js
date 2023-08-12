@@ -276,6 +276,8 @@ async function deployContract() {
     // Wait for the deployment transaction to be mined
     await contract.deployed();
     deployedContractAddress = contract.address;
+    const contractAddressElement = document.getElementById('generated-address');
+    contractAddressElement.textContent = deployedContractAddress;
 
     console.log('Contract deployed at address:', contract.address);
 }
