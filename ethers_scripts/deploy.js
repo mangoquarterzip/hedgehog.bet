@@ -270,9 +270,9 @@ async function deployContract() {
     // Create a Contract Factory
     const factory = new ethers.ContractFactory(abi, bytecode, provider.getSigner());
 
-    // Deploy the contract - azuki chainlink address, and the threshsold - need to make these dynamic based on selection from frontend
-    const contract = await factory.deploy("0x9F6d70CDf08d893f0063742b51d3E9D1e18b7f74", "4000000000000000000");
-
+    // Deploy the contract -  chainlink address, and the threshsold - need to make these dynamic based on selection from frontend
+    const contract = await factory.deploy("0xAC15714c08986DACC0379193e22382736796496f", "40000000000000000000");
+// this is the BTC/USD CA for chainlink , this is 40k
     // Wait for the deployment transaction to be mined
     await contract.deployed();
     deployedContractAddress = contract.address;
