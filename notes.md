@@ -28,7 +28,7 @@ Alice must call the resolve() function on Base
 
 to do list:
 
-skeletons on open hedges, and rendering them in from an api call using covalent
+rendering them in from an api call using covalent- rendered skeletons on open hedges done
 
 open a hedge button generated seperate page for caller1 to generate a hedge
 

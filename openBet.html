@@ -209,7 +209,7 @@
         </div>
     </div>
     <div class="div4">
-        <button type="button" id = "open-bet-button"style="font-size: 24px;" class="full-width-button text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg px-6 py-4 text-center mr-2 mb-2">OPEN A HEDGE</button>
+        <button type="button" style="font-size: 24px;" class="full-width-button text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg px-6 py-4 text-center mr-2 mb-2">OPEN A HEDGE</button>
     </div>
     
     
@@ -217,42 +217,51 @@
 
 <div class="content2">
 
-    <div class="top-section">
 
-        <div class="betbox" style="flex: 30%;">
-            
-        
-        
-        </div>
-        <div class="betbox" style="flex: 40%;"></div>
+    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+    <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option selected>Choose a betting condition...</option>
+      <option value="US">NFT Floor Price</option>
+      <option value="CA">Asset Price</option>
+      <option value="FR">France</option>
+      <option value="DE">Germany</option>
+    </select>
 
-        <div class="betbox" style="flex: 30%; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        Contract Address: asdukhfaskdfasjdf <br>
-        Date opened: xx/xx/xx <br>
-        Total Amount of NFTs: 5 <br>
-        Total Amount of ERC20s: 3 <br>
-        NFT Worth: $23,245.52 <br>
-        ERC20: Worth: $12.933.92 <br>
-        Total Asset Worth (derived from Chainlink Price Feed): $59,231.62
-        </div>
-    </div>
+    <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Start Bet</button>
 
-    <div class="bottom-section">
-        <div class="betbox" style="flex: 70%;"></div>
+    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+    <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option selected>Choose ERC20</option>
+      <option value="US">NFT Floor Price</option>
+      <option value="CA">Asset Price</option>
+      <option value="FR">France</option>
+      <option value="DE">Germany</option>
+    </select>
+
+    <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Deposit ERC20</button>
+
+<br>
+
+    <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option selected>Choose NFT</option>
+      <option value="US">NFT Floor Price</option>
+      <option value="CA">Asset Price</option>
+      <option value="FR">France</option>
+      <option value="DE">Germany</option>
+    </select>
+
+    <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Deposit NFT</button>
+<br>
+    <button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Lock</button>
+<br>
+<button type="button" class="text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center" disabled>Accept</button>
 
 
-        <div class="betbox" style="flex: 30%;">
-        
-            <button type="button" class="full-width-button-new text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Join bet</button>
-            <button type="button" class="full-width-button-new text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Lock</button>
-            <button type="button" class="full-width-button-new text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">sdfjsdfn</button>
-            <button type="button" class="full-width-button-new text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Resolve</button>
 
-
-
-        </div>
-    </div>
 </div>
+
+
+
 
 
 
