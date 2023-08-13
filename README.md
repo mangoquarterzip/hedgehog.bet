@@ -1,22 +1,14 @@
-# Project Name
+The Hedgehog Protocol allows for peer to peer hedging between two users. There are two implementations. It is chain agnostic, and works with any EVM compatible blockchain. The same logic could be applied to non-EVM blockchains as well. Currently on the front end, we allow for usage on Mode, Base, Optimism, Polygon, Ethereum and Zora. 
 
-A brief description of your project.
+Hedgehog protocol solves some intrinsically fundamental issues within society right now. The ability to not trust. By ensuring all logic is completed through code and on the blockchain, we can guarantee that a user will be paid out after a bet is made without the use of an intermediary entity.
 
-## Table of Contents
+For example, if Alice wants to bet against Bob that the price of Bitcoin in 2024 will be more than 40,000 USD, but Bob doesn’t agree, both users can deposit as many or as little ERC20s and NFTs in the holding contract as they please. Then, they both confirm that they are happy with each other’s collateral, and when the time comes, anyone is able to call the resolve function; and all of the deposited collateral within the smart contract goes to the winner. 
 
-- [About](#about)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+We revolved the resolution criteria around Chainlink data feed oracles, whereby we can pull an aggregate price from multiple sources for Price Feeds, NFT floor prices, Index prices etc. To implement something that isn’t covered by Chainlink’s data feed oracles, we would have to link up an API to an oracle, however this approach is inherently flawed because the data source isn’t aggregated. What if that single API you are relying on is compromised? This is why, to resolve items not covered by covered by the Data Feeds, we would use something like UMA’s optimistic oracle, where participants are heavily financially incentivized to make the correct comment about the validity of a statement.
 
-## About
+For a cross chain implementation any generic cross-chain messaging protocol would work. For this instance, I chose to worth with Hyperlane just because of the simplicity of the Mailbox contracts. The logic behind a cross-chain implementation revolves around the fact that EVM addreses are chain agnostic, meaning that Alice and Bob will have the same address no matter whether they are on chainA or on chainB. This means that Alice can deposit into a smart contract on chainA and Bob can deposit into a smart contract on chainB; and lets suppose that Alice wins the bet, then the assets on chainA will be returned to Alice’s address on chainA, and the assets on chainB will be returned to Alice’s address but on chainB. i.e. Assets are not moving across chains. By using some simple logic like acknowledging that on one chain a user has called locked() and then passing that information using Hyperlane to the other chain and messaging across chains who the winner of the bet was, we can implement this cross-chain.
 
-Provide a clear and concise overview of your project. Explain its purpose, features, and what problem it solves. Include any relevant context that would help someone unfamiliar with the project understand its significance.
+
 
 ## Single Chain Implementation
 
@@ -83,28 +75,4 @@ Chainlink Oracle: This is used to fetch the latest NFT floor price. It acts as a
 OpenZeppelin Libraries: For standard ERC20 and ERC721 (NFT) interfaces and implementations, ensuring safety and compatibility with other Ethereum contracts and applications.
 State Management: The contract keeps track of the current bet status, the assets in play, and the addresses of Alice and Bob.
 Asset Transfers: The contract ensures that, based on the outcome of the bet, the locked assets are transferred to the appropriate winner.
-
-
-### Prerequisites
-
-Outline the software, libraries, tools, and configurations that a user needs to have in place before they can use your project.
-
-### Installation
-
-Provide a detailed guide on how to install your project. You can include code snippets and terminal commands to help users understand the installation process.
-
-## Usage
-
-Demonstrate how to use your project once it's set up. Include code examples, screenshots, and explanations to guide users through the different use cases and scenarios.
-
-## Contributing
-
-Explain how others can contribute to your project. Include guidelines for submitting pull requests, reporting bugs, and suggesting new features. Be sure to outline any coding standards or contribution processes you follow.
-
-## License
-
-Indicate the open-source license your project is released under. This section helps others understand how they can use, modify, and distribute your code.
-
-## Contact
-
-Provide a way for users to contact you. This could be an email address, a link to your personal website, or any other method you're comfortable with.
+ users to contact you. This could be an email address, a link to your personal website, or any other method you're comfortable with.
