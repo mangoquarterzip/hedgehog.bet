@@ -82,4 +82,4 @@ Chainlink Oracle: This is used to fetch the latest NFT floor price. It acts as a
 OpenZeppelin Libraries: For standard ERC20 and ERC721 (NFT) interfaces and implementations, ensuring safety and compatibility with other Ethereum contracts and applications.
 State Management: The contract keeps track of the current bet status, the assets in play, and the addresses of Alice and Bob.
 Asset Transfers: The contract ensures that, based on the outcome of the bet, the locked assets are transferred to the appropriate winner.
- users to contact you. This could be an email address, a link to your personal website, or any other method you're comfortable with.
+ users to contact you. 
