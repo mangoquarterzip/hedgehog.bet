@@ -18,9 +18,31 @@ A brief description of your project.
 
 Provide a clear and concise overview of your project. Explain its purpose, features, and what problem it solves. Include any relevant context that would help someone unfamiliar with the project understand its significance.
 
-## Features
+## Single Chain Implementation
 
-List the key features or functionalities of your project. You can use bullet points or a table to showcase the features and their descriptions.
+startBet(): Alice initiates the bet.
+
+This function sets the status of the bet to ONGOING and assigns Alice (the sender of the transaction) as one of the participants.
+
+depositERC20(tokenAddress, amount) and/or depositNFT(nftAddress, tokenId): Alice deposits assets.
+
+Alice, now having initiated the bet, should deposit her ERC20 or NFT assets as a part of the wager. She can call either function multiple times if depositing different tokens or multiple NFTs.
+
+joinBet(): Bob joins the bet.
+
+Once Alice has initiated the bet and possibly after depositing her assets, Bob can join the bet by calling this function.
+
+depositERC20(tokenAddress, amount) and/or depositNFT(nftAddress, tokenId): Bob deposits assets.
+
+After joining the bet, Bob should deposit his ERC20 or NFT assets as his part of the wager. Like Alice, he can call these functions multiple times if depositing different tokens or multiple NFTs.
+
+lock(): Both Alice and Bob lock their bets.
+
+Once both Alice and Bob have deposited their assets, they must individually call the lock function. This serves as an agreement that both parties are ready to resolve the bet based on the oracle's data.
+
+resolveBet(): Any external actor or one of the participants can now resolve the bet.
+
+This function checks the latest price from the Chainlink oracle. If the price is greater than or equal to the threshold, Bob wins. Otherwise, Alice wins. All deposited assets (both ERC20 tokens and NFTs) are transferred to the winner.
 
 ## Cross Chain Implementation
 
