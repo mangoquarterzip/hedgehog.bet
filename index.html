@@ -269,29 +269,27 @@
             <button id="loadContractButton" type="button" class="full-width-button-new text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Load Contract</button>
     
 
-            <button type="button" id = "deploy" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Join Bet</button>
+            <button type="button" id = "join-bet-index" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Join Bet</button>
             <br>
 
             <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
             <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
               <option selected>Choose ERC20</option>
-              <option value="US">NFT Floor Price</option>
-              <option value="CA">Asset Price</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option>
+              <option value="US">KEVIN TOKEN</option>
+              <option value="CA">JOHNNY TOKEN</option>
             </select>
         <br>
             <button type="button" id = "approve-token" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Approve Token</button>
             <button type="button" id = "deposit-erc20-openbet" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Deposit ERC20</button>
 
         <br>
-        br
+        
             <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
               <option selected>Choose NFT</option>
-              <option value="US">NFT Floor Price</option>
-              <option value="CA">Asset Price</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option>
+              <option value="US">MintedTestNft 1</option>
+              <option value="CA">MintedTestNft 2</option>
+              <option value="FR">MintedTestNft 3</option>
+              <option value="DE">MintedTestNft 4</option>
             </select>
         <br>
             <button type="button" id = "approve-nft" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Approve NFT</button>
@@ -328,14 +326,11 @@
     <script src="https://cdn.jsdelivr.net/npm/daisyui@1.10.0/dist/full.js"></script>
     <script src="script.js"></script>
     <script src ="ethers_scripts/deploy.js"></script>
-    <script src = "ethers_scripts/deposit-erc20.js"></script>
-    <script src="ethers_scripts/make-prediction-less.js"></script>
-    <script src="ethers_scripts/make-prediction-more.js"></script>
-    <script src="ethers_scripts/deposit-nft.js"></script>
-    <script src="ethers_scripts/lock.js"></script>
     <script src="metamaskScripts/changeNetwork.js"></script>
-    <script src="covalent/getDisplayData.js"></script>
-    <script src="./ethers_scripts/approveToken.js"></script>
-    <script src = "ethers_scripts/approveNFT.js"></script>
-</body>
+    <script src="./ethers_scripts_index/join_bet.js"></script>
+    <script src="./ethers_scripts/LOADED_CONTRACT.JS"></script>
+    <script src="./ethers_scripts_index/deposit_nft.js"></script>
+    <script src="./ethers_scripts_index/approve_nft.js"></script>
+    <script src="./ethers_scripts_index/lock.js"></script>
+    </body>
 </html>

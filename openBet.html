@@ -287,32 +287,35 @@
         <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
         <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected>Choose ERC20</option>
-          <option value="US">NFT Floor Price</option>
-          <option value="CA">Asset Price</option>
-          <option value="FR">France</option>
-          <option value="DE">Germany</option>
+          <option value="US">KEVIN TOKEN</option>
+          <option value="CA">JOHNNY TOKEN</option>
         </select>
     <br>
-        <button type="button" id = "deposit-erc20-openbet" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Deposit ERC20</button>
-    
+    <button type="button" id = "approve-token" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Approve Token</button>
+    <button type="button" id = "deposit-erc20-openbet" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Deposit ERC20</button>
+
     <br>
     br
         <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected>Choose NFT</option>
-          <option value="US">NFT Floor Price</option>
-          <option value="CA">Asset Price</option>
-          <option value="FR">France</option>
-          <option value="DE">Germany</option>
+          <option value="US">MintedTestNft 1</option>
+          <option value="CA">MintedTestNft 2</option>
+          <option value="FR">MintedTestNft 3</option>
+          <option value="DE">MintedTestNft 4</option>
         </select>
     <br>
+         <button type="button" id = "approve-nft" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Approve NFT</button>
         <button type="button"id = "deposit-nft" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Deposit NFT</button>
     
     <br>
         <button type="button" id = "lock" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Lock</button>
     <br>
-    <button type="button" class="text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center" disabled>Accept</button>
     <br>
-    <br>
+    <input type="text" id="load-contract-for-accept-resolve" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Load Contract...">
+
+    <button type="button" id = "accept" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Accept</button>
+    <button type="button" id = "resolve-new" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Resolve</button>
+
     <h1 id = "generated-address" style="color: white;">Your Generated Contract Address: </h1>
     
     </div>
@@ -349,5 +352,10 @@
   <script src="ethers_scripts/deposit-nft.js"></script>
   <script src="ethers_scripts/lock.js"></script>
   <script src="metamaskScripts/changeNetwork.js"></script>
+  <script src="./ethers_scripts/approveNFT.js"></script>
+  <script src="./ethers_scripts/approveToken.js"></script>
+  <script src="./ethers_scripts/accept.js"></script>
+  <script src="./ethers_scripts/resolve.js"></script>
+  <script src="./ethers_scripts/load_contract_bet.js"></script>
 </body>
 </html>

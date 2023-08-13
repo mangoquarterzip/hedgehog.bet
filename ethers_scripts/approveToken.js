@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // change the function name here                    change the id finder here
     approveTokenButton.addEventListener('click', async () => {
         const tokenAddress = '0x576cfd493aB3dB2ED06b107be2f1ec172f45f3BE'; // Replace with actual token address
-        const spenderAddress = '0x473c35c466506c0e235620f348f7f199182489a7'; // Replace with spender address
+        const spenderAddress = deployedContractAddress; // Replace with spender address
 
         await suggestTokenApproval(tokenAddress, spenderAddress);
     });
