@@ -12,6 +12,9 @@ For a cross chain implementation any generic cross-chain messaging protocol woul
 
 ## Single Chain Implementation
 
+https://github.com/mangoquarterzip/hedgehog.bet/blob/main/contracts/SingleChainHoldingContract.sol
+
+
 startBet(): Alice initiates the bet.
 
 This function sets the status of the bet to ONGOING and assigns Alice (the sender of the transaction) as one of the participants.
@@ -37,6 +40,8 @@ resolveBet(): Any external actor or one of the participants can now resolve the 
 This function checks the latest price from the Chainlink oracle. If the price is greater than or equal to the threshold, Bob wins. Otherwise, Alice wins. All deposited assets (both ERC20 tokens and NFTs) are transferred to the winner.
 
 ## Cross Chain Implementation
+
+https://github.com/mangoquarterzip/hedgehog.bet/blob/main/contracts/MultiChainHoldingContract.sol
 
 Bet Contract Flow:
 This Ethereum smart contract allows for a betting game between Alice and Bob. The bet centers around a prediction on the floor price of NFTs based on Chainlink's oracle. If the floor price exceeds a given threshold, the prediction is considered ABOVE. If it is below the threshold, the prediction is BELOW. The bet operates as follows:
