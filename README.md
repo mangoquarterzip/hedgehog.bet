@@ -1,3 +1,5 @@
+https://youtu.be/yEnROjGnkXA
+
 The Hedgehog Protocol allows for peer to peer hedging between two users. There are two implementations. It is chain agnostic, and works with any EVM compatible blockchain. The same logic could be applied to non-EVM blockchains as well. Currently on the front end, we allow for usage on Mode, Base, Optimism, Polygon, Ethereum and Zora. 
 
 Hedgehog protocol solves some intrinsically fundamental issues within society right now. The ability to not trust. By ensuring all logic is completed through code and on the blockchain, we can guarantee that a user will be paid out after a bet is made without the use of an intermediary entity.
